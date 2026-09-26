@@ -1,0 +1,65 @@
+:root {
+    color-scheme: light dark;
+    font-family: ui-sans-serif, sans-serif;
+}
+
+body {
+    display: grid;
+    min-height: 100dvh;
+    width: 80%;
+    max-width: 64dvw;
+    margin: auto;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+.filters .controls {
+    display: flex;
+    align-items: center;
+
+    h3 {
+        flex: 1;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+.filter {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    select {
+        font-size: 1rem;
+    }
+    input {
+        font-size: 1rem;
+    }
+    button {
+        font-size: 1rem;
+    }
+}
+
+output {
+    display: block;
+    columns: 24rem auto;
+    gap: 0.5rem;
+    margin-top: 1rem;
+
+    span {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0.25rem 0;
+    }
+}
