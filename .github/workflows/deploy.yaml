@@ -1,0 +1,19 @@
+on: [push, workflow_dispatch]
+
+jobs:
+  deploy:
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.output.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: make get-words
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: src/
+      - uses: actions/deploy-pages@v4
+        id: deployment

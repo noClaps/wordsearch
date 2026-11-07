@@ -9,7 +9,7 @@ Words list: https://huggingface.co/datasets/ryanjosephkamp/english-openlist
 Clone the repository:
 
 ```sh
-git clone https://codeberg.org/noClaps/wordsearch
+git clone https://github.com/noClaps/wordsearch
 cd wordsearch
 ```
 
